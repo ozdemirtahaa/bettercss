@@ -209,7 +209,7 @@ a, span, h1, h2, h3, h4, h5, h6 {
 
 
 .courseindex .courseindex-item.pageitem {
-    background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%)!important;
+    background: var(--navbar-item-selected-background)!important;
     box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, .3)!important;
     color: #fff !important;
 }
@@ -313,4 +313,37 @@ body.dir-ltr {
 
 .block_panopto .listItemAlt {
     background: var(--body-background) !important;
+}
+
+
+.prins-lab {
+    background-color: var(--card-background) !important;
+    border: 1px solid var(--primary-color)!important;
+}
+.prins-block-classwork, .prins-block-homework {
+    border: 2px solid var(--primary-color)!important;
+    background: var(--body-background)!important;
+    border-radius: 10px!important;
+}
+.prins-lab-activities {
+    background-color: var(--card-background) !important;
+}
+.prins-lab-details {
+    background: #003B5C!important;
+}
+.prins-lab-activity {
+    background: var(--body-background)!important;
+}
+.prins-view-btn {
+    color: var(--navbar-item-selected-color)!important;
+    background: var(--primary-color)!important;
+}
+
+.prins-seminar {
+    border: 1px solid var(--primary-color)!important;
+    background-color: var(--card-background) !important;
+}
+.prins-homework-item {
+    border: 1px solid var(--primary-color)!important;
+    background-color: var(--card-background) !important;
 }
