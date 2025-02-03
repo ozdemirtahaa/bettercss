@@ -1,0 +1,69 @@
+/* Ensure the popup takes a fixed size */
+html, body {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    font-family: sans-serif;
+  }
+  
+  /* Container centers its content */
+  .container {
+    text-align: center;
+  }
+  
+  /* Toggle switch container */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 44px;
+  }
+  
+  /* Hide the default checkbox */
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider (label) */
+  .toggle-switch label {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 44px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.2s;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  /* The knob */
+  .toggle-switch label:before {
+    position: absolute;
+    content: "";
+    left: 4px;
+    top: 4px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* When checked, change background color */
+  .toggle-switch input:checked + label {
+    background-color: #4caf50;
+  }
+  
+  /* When checked, move the knob to the right */
+  .toggle-switch input:checked + label:before {
+    transform: translateX(36px);
+  }
+  

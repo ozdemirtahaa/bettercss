@@ -1,0 +1,22 @@
+{
+    "name": "BetterCSS",
+    "version": "0.9.9",
+    "description": "Protect your eyes from awful designs",
+    "permissions": ["storage"],
+    "host_permissions": ["https://mymodules.stmarys.ac.uk/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://mymodules.stmarys.ac.uk/*"],
+        "js": ["mymodules.js"],
+        "css": ["mymodules.css"]
+      }
+    ],
+    "icons": {
+      "48": "dark-icon.png"
+    },
+    "action": {
+      "default_popup": "mymodules-popup.html",
+      "default_icon": "dark-icon.png"
+    },
+    "manifest_version": 3
+}

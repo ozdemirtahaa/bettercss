@@ -1,0 +1,316 @@
+:root {
+    --tw-card-border: 0px solid var(--tw-gray-200)!important;
+    --tw-gray-200: #f1f1f4!important;
+    --tw-card-box-shadow: 0px 3px 4px 0px rgba(0,0,0,.03)!important;
+
+    --body-background: #f8f7fa!important;
+    --navbar-background: #fff !important;
+    --navbar-item-color: #444050 !important;
+    --secondary-navbar-item-color: #ffffff !important;
+    --navbar-item-background: #ffffff !important;
+    --navbar-item-selected-color: #fff !important;
+    --navbar-item-selected-background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%) !important;
+    --card-background: #ffffff!important;
+    --card-title-color: #444050!important;
+    --card-subtitle-color: #8d8a94!important;
+
+    --course-header-color: rgba(47,43,61,.06)!important;
+    --success-color: #28c76f!important;
+    --success-background: #ddf6e8!important;
+    
+    --danger-color: #ff4c51!important;
+    --danger-background: #ffe2e3!important;
+    
+    --primary-color: #7367f0!important;
+    --primary-background: #e9e7fd!important;
+    --prins-bg-color: #7367f0!important;
+}
+
+:root[data-theme="dark"] {
+    --tw-card-border: 0px solid var(--tw-gray-200)!important;
+    --tw-gray-200: #44485e!important;
+    --tw-card-box-shadow: 0px 3px 4px 0px rgba(0,0,0,.03)!important;
+
+    --body-background: #25293c!important;
+    --navbar-background: #2f3349 !important;
+    --navbar-item-color: #cfcde4 !important;
+    --secondary-navbar-item-color: #ffffff !important;
+    --navbar-item-background: transparent !important;
+    --navbar-item-selected-color: #fff !important;
+    --navbar-item-selected-background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%) !important;
+    --card-background: #2f3349!important;
+    --card-title-color: #cfcde4!important;
+    --card-subtitle-color: #9191a8!important;
+
+    --course-header-color: rgba(225,222,245,.06)!important;
+    --success-color: #28c76f !important;
+    --success-background: #2e4b4f!important;
+    
+    --danger-color: #ff4c51 !important;
+    --danger-background: #50374a!important;
+    
+    --primary-color: #7367f0 !important;
+    --primary-background: #3a3b64!important;
+    --prins-bg-color: var(--primary-color)!important;
+}
+
+a, span, h1, h2, h3, h4, h5, h6 {
+    color: var(--card-title-color)!important;
+}
+
+#region-main {
+    background-color: transparent!important;
+}
+.card {
+    background-color: var(--card-background)!important;
+    color: var(--card-title-color)!important;
+}
+.prins-quicklinks-nav {
+    background-color: var(--card-background)!important;
+    color: var(--card-title-color)!important;
+}
+.prins-doc-link {
+    background-color: var(--body-background)!important;
+    color: var(--card-title-color)!important;
+}
+
+
+.card-footer {
+    color: var(--card-title-color)!important;
+}
+
+.multiline {
+    color: var(--card-title-color)!important;
+}
+
+.progress {
+    margin-bottom: 0.33rem!important;
+}
+
+.progress-bar {
+    background: var(--navbar-item-selected-background)!important;
+}
+
+.card-header {
+    display: flex!important;
+    min-height: 56px!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+    border-bottom: var(--tw-card-border)!important;
+    padding-inline-start: 1.875rem!important;
+    padding-inline-end: 1.875rem!important;
+    padding-top: 0.75rem!important;
+    padding-bottom: 0.75rem!important;
+}
+.card-body {
+    flex-grow: 1;
+    padding-inline-start: 1.875rem!important;
+    padding-inline-end: 1.875rem!important;
+    padding-top: 1.25rem!important;
+    padding-bottom: 1.25rem!important;
+}
+
+.main-inner {
+    display: flex!important;
+    flex-direction: column!important;
+    box-shadow: var(--tw-card-box-shadow)!important;
+    background-color: var(--card-background)!important;
+    border-radius: .75rem!important;
+    border: var(--tw-card-border)!important;
+    flex-grow: 1!important;
+    padding-inline-start: 1.875rem!important;
+    padding-inline-end: 1.875rem!important;
+    padding-top: 1.25rem!important;
+    padding-bottom: 1.25rem!important;
+}
+.course-category {
+    background: lime!important;
+}
+.card-footer {
+    /*display: flex!important;*/
+    align-items: center!important;
+    justify-content: space-between!important;
+    border-top: var(--tw-card-border)!important;
+    padding-inline-start: 1.875rem!important;
+    padding-inline-end: 1.875rem!important;
+    padding-top: .75rem!important;
+    padding-bottom: .75rem!important;
+}
+.dashboard-card-footer.menu {
+    display: none!important;
+}
+#usernavigation {
+    margin-left: 0!important;
+}
+.navbar {
+    justify-content: space-between!important;
+}
+.navbar-nav.d-none {
+    display: none!important;
+    padding: 0 12.5rem!important;
+}
+.navbar.fixed-top .primary-navigation .navigation .nav-link {
+    background: var(--navbar-item-background)!important;
+    color: var(--navbar-item-color) !important;
+    box-shadow: none!important;
+    height: auto!important;
+    border: none!important;
+    border-radius: .375rem!important;
+    padding: .5rem 1.5rem!important;
+}
+
+.navbar.fixed-top .primary-navigation .navigation .nav-link.active {
+    background: var(--navbar-item-selected-background)!important;
+    color: var(--navbar-item-selected-color) !important;
+    box-shadow: 0px 2px 6px 0px rgba(115,103,240,.3)!important;
+    height: auto!important;
+    border: none!important;
+    border-radius: .375rem!important;
+    padding: .5rem 1.5rem!important;
+}
+
+.moremenu {
+    display: flex!important;
+    align-items: center!important;
+}
+.moremenu ul {
+    align-items: center!important;
+}
+
+
+#user-action-menu {
+    box-shadow: 0 .25rem 1.125rem 0 rgba(47,43,61,.16)!important;
+    padding: 0.75rem!important;
+    border: none!important;
+    background-color: var(--navbar-background)!important;
+}
+.navbar.fixed-top .usermenu .dropdown-menu .dropdown-item {
+    border-radius: 0.375rem!important;
+    padding: 0.5rem 1rem!important;
+}
+
+.dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within {
+    background-color: #f3f2f3!important;
+}
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within {
+    color: #000000!important;
+}
+
+#carousel-item-main a:last-of-type {
+    color: #fff!important;
+    background-color: #ff4c51!important;
+    border-color: #ff4c51!important;
+    text-align: center!important;
+}
+
+
+
+
+
+
+.courseindex .courseindex-item.pageitem {
+    background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%)!important;
+    box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, .3)!important;
+    color: #fff !important;
+}
+
+.expanded-icon, .collapsed-icon {
+    float: right!important;
+    position: absolute!important;
+    right: 10px!important;
+}
+
+.course-section-header .expanded-icon, .course-section-header .collapsed-icon {
+    position: static!important;
+}
+
+.aabtn.focus, .aabtn:focus, .btn-link.focus, .btn-link:focus, .nav-link.focus, .nav-link:focus, .editor_atto_toolbar button.focus, .editor_atto_toolbar button:focus, .editor_atto_toolbar .atto_toolbar_row.focus, .editor_atto_toolbar .atto_toolbar_row:focus, [role="button"].focus, [role="button"]:focus, .list-group-item-action.focus, .list-group-item-action:focus, input[type="checkbox"].focus, input[type="checkbox"]:focus, input[type="radio"].focus, input[type="radio"]:focus, input[type="file"].focus, input[type="file"]:focus, input[type="image"].focus, input[type="image"]:focus, .sr-only-focusable.focus, .sr-only-focusable:focus, a.dropdown-toggle.focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"].focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton.focus, .moodle-dialogue-base .closebutton:focus, button.close.focus, button.close:focus, .form-autocomplete-selection.focus, .form-autocomplete-selection:focus, [role="treeitem"]:not([aria-expanded="true"]).focus, [role="treeitem"]:not([aria-expanded="true"]):focus {
+    box-shadow: none!important;
+}
+
+.courseindex-section-title {
+    transition: all 200ms ease!important;
+}
+.courseindex-section-title:hover, .courseindex-section-title:active {
+    background: rgba(47,43,61,.08)!important;
+}
+
+.courseindex-item a {
+    transition: all 0ms ease!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dir-ltr {
+    color: var(--card-title-color)!important;
+    background: var(--body-background)!important;
+}
+.drawers {
+    color: var(--card-title-color)!important;
+    background: var(--body-background)!important;
+}
+.secondary-navigation .moremenu .nav-tabs .nav-link {
+    color: var(--secondary-navbar-item-color)!important;
+}
+.badge.alert-success {
+    background-color: var(--success-background) !important;
+    color: var(--success-color)!important;
+}
+.badge.alert-danger {
+    background-color: var(--danger-background) !important;
+    color: var(--danger-color)!important;
+}
+.badge-primary {
+    background: var(--navbar-item-selected-background)!important;
+    color: var(--navbar-item-selected-color) !important;
+}
+.badge-light {
+    background-color: var(--primary-background) !important;
+    color: var(--primary-color)!important;
+}
+
+:root[data-theme="dark"] .bg-white {
+    background-color: var(--navbar-background)!important;
+}
+.drawer {
+    background: var(--card-background)!important;
+}
+.drawer-toggles i {
+    color: var(--secondary-navbar-item-color)!important;
+}
+
+.course-content .section-summary, .activity-item:not(.activityinline) {
+    border: 1px solid var(--tw-gray-200)!important;
+}
+
+.course-section {
+    border-bottom: none!important;
+}
+.course-section-header {
+    background-color: var(--course-header-color)!important;
+}
+
+.userinitials {
+    background: var(--navbar-item-selected-background)!important;
+    color: var(--navbar-item-selected-color) !important;
+}
+
+.activity-altcontent p, .activity-altcontent h1, .activity-altcontent h2, .activity-altcontent h3, .activity-altcontent h4, .activity-altcontent h5, .activity-altcontent h6 {
+    color: var(--card-title-color)!important;
+    background-color: var(--course-header-color) !important;
+}
+
+.block_panopto .listItemAlt {
+    background: var(--body-background) !important;
+}
