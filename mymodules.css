@@ -24,6 +24,10 @@
     --primary-color: #7367f0!important;
     --primary-background: #e9e7fd!important;
     --prins-bg-color: #7367f0!important;
+    --dashboard-card-border: #ffffff!important;
+    --neon-box-shadow: rgba(154, 161, 171, 0.15)!important;
+    --neon-box-shadow-size: 0 0 35px 0!important;
+    --secondary-navigation-bg: #003B5C!important;
 }
 
 :root[data-theme="dark"] {
@@ -52,6 +56,10 @@
     --primary-color: #7367f0 !important;
     --primary-background: #3a3b64!important;
     --prins-bg-color: var(--primary-color)!important;
+    --dashboard-card-border: #747474!important;
+    --neon-box-shadow: rgba(115, 103, 240, 0.5)!important;
+    --neon-box-shadow-size: 0px 0 40px 1px!important;
+    --secondary-navigation-bg: #000000!important;
 }
 
 a, span, h1, h2, h3, h4, h5, h6 {
@@ -61,9 +69,17 @@ a, span, h1, h2, h3, h4, h5, h6 {
 #region-main {
     background-color: transparent!important;
 }
+.secondary-navigation {
+    background-color: var(--secondary-navigation-bg)!important;
+    box-shadow: 0 0 20px 1px var(--neon-box-shadow)!important;
+}
 .card {
     background-color: var(--card-background)!important;
     color: var(--card-title-color)!important;
+}
+.dashboard-card {
+    border: 1px solid var(--dashboard-card-border)!important;
+    box-shadow: var(--neon-box-shadow-size) var(--neon-box-shadow)!important;
 }
 .prins-quicklinks-nav {
     background-color: var(--card-background)!important;
@@ -73,7 +89,11 @@ a, span, h1, h2, h3, h4, h5, h6 {
     background-color: var(--body-background)!important;
     color: var(--card-title-color)!important;
 }
-
+.aalink.focus, a.focus.autolink, .aalink:focus, a.autolink:focus, #page-footer a:not([class]).focus, #page-footer a:not([class]):focus, .arrow_link.focus, .arrow_link:focus, a:not([class]).focus, a:not([class]):focus, .activityinstance > a.focus, .activityinstance > a:focus {
+    box-shadow: inherit!important;
+    background-color: inherit!important;
+    outline: inherit!important;
+}
 
 .card-footer {
     color: var(--card-title-color)!important;
@@ -122,6 +142,9 @@ a, span, h1, h2, h3, h4, h5, h6 {
     padding-inline-end: 1.875rem!important;
     padding-top: 1.25rem!important;
     padding-bottom: 1.25rem!important;
+}
+.course-category {
+    background: rgb(174, 38, 174)!important;
 }
 .card-footer {
     /*display: flex!important;*/
@@ -208,6 +231,11 @@ a, span, h1, h2, h3, h4, h5, h6 {
 .courseindex .courseindex-item.pageitem {
     background: var(--navbar-item-selected-background)!important;
     box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, .3)!important;
+    color: #fff !important;
+}
+
+
+.courseindex .courseindex-item.pageitem a, .courseindex .courseindex-item.pageitem span, .courseindex .courseindex-item.pageitem i {
     color: #fff !important;
 }
 
@@ -343,4 +371,30 @@ body.dir-ltr {
 .prins-homework-item {
     border: 1px solid var(--primary-color)!important;
     background-color: var(--card-background) !important;
+}
+.activity-header {
+    color: var(--card-title-color) !important;
+    background: var(--body-background) !important;
+}
+
+.generaltable, .generaltable tbody tr:hover, .generaltable tbody tr {
+    color: var(--card-title-color) !important;
+}
+
+
+.tii_links_container .warning, .pp_errors_warning {
+    background-color: var(--danger-background) !important;
+    color: var(--danger-color)!important;
+}
+.path-mod-assign .overdue, .path-mod-assign .overduesubmission, .path-mod-assign [data-region="grade-panel"] td.submissionnotgraded, .path-mod-assign [data-region="grade-panel"] div.submissionnotgraded {
+    background-color: var(--danger-background) !important;
+    color: var(--danger-color)!important;
+}
+#prins-quicklinks label {
+    background-color: var(--primary-background) !important;
+    color: var(--primary-color)!important;
+}
+
+.drawertoggle i, #nav-notification-popover-container i {
+    color: var(--card-title-color) !important;
 }
