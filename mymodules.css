@@ -28,6 +28,7 @@
     --neon-box-shadow: rgba(154, 161, 171, 0.15)!important;
     --neon-box-shadow-size: 0 0 35px 0!important;
     --secondary-navigation-bg: #003B5C!important;
+    --code-color: black!important;
 }
 
 :root[data-theme="dark"] {
@@ -60,6 +61,8 @@
     --neon-box-shadow: rgba(115, 103, 240, 0.5)!important;
     --neon-box-shadow-size: 0px 0 40px 1px!important;
     --secondary-navigation-bg: #000000!important;
+    --code-color: white!important;
+
 }
 
 a, span, h1, h2, h3, h4, h5, h6 {
@@ -397,4 +400,8 @@ body.dir-ltr {
 
 .drawertoggle i, #nav-notification-popover-container i {
     color: var(--card-title-color) !important;
+}
+
+code {
+    color: var(--code-color)!important;
 }
