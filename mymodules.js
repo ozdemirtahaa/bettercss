@@ -1,3 +1,4 @@
+/*
 function filterModule(moduleName)
 {
     var filterKeyword = moduleName; // Example filter keyword for the text content
@@ -98,7 +99,7 @@ function replaceToggleButton() {
         }
     });
 }
-
+*/
 // Call function to replace the toggle button
 
 
@@ -121,3 +122,24 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         applyTheme();
     }
 });
+
+var darkModeContainer = document.querySelector("#toggle-darkmode");
+var element = darkModeContainer.querySelector(".custom-switch");
+element.addEventListener('mouseover', function() {
+    moveElementRandomly(element);
+});
+
+function moveElementRandomly(el) {
+    // Get the viewport width and height
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Generate random position values within the screen bounds
+    const randomX = Math.random() * 93;
+    const randomY = Math.random() * 93;
+    // Apply the new random position to the element
+    el.style.position = 'absolute';
+    el.style.padding = '3rem';
+    el.style.left = `${randomX}vw`;
+    el.style.top = `${randomY}vh`;
+}
