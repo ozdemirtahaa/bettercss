@@ -135,8 +135,8 @@ function moveElementRandomly(el) {
     const viewportHeight = window.innerHeight;
 
     // Generate random position values within the screen bounds
-    const randomX = Math.random() * 93;
-    const randomY = Math.random() * 93;
+    const randomX = Math.random() * 90;
+    const randomY = Math.random() * 90;
     // Apply the new random position to the element
     el.style.position = 'absolute';
     el.style.padding = '3rem';
