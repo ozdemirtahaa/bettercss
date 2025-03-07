@@ -29,6 +29,18 @@
     --neon-box-shadow-size: 0 0 35px 0!important;
     --secondary-navigation-bg: #003B5C!important;
     --code-color: black!important;
+
+
+
+
+
+    --theme-selector-after-bg: #8f959e!important;
+    --theme-selector-after-transform: none!important;
+
+    --theme-selector-before-bg: #fff!important;
+    --theme-selector-before-border: #8f959e!important;
+    --theme-selector-before-color: #8f959e!important;
+
 }
 
 :root[data-theme="dark"] {
@@ -62,6 +74,17 @@
     --neon-box-shadow-size: 0px 0 40px 1px!important;
     --secondary-navigation-bg: #000000!important;
     --code-color: white!important;
+
+
+
+    --theme-selector-after-bg: #fff!important;
+    --theme-selector-after-transform: translateX(0.9375rem)!important;
+
+    --theme-selector-before-bg: #003B5C!important;
+    --theme-selector-before-border: #003B5C!important;
+    --theme-selector-before-color: #fff!important;
+
+
 
 }
 
@@ -404,4 +427,19 @@ body.dir-ltr {
 
 code {
     color: var(--code-color)!important;
+}
+
+.custom-switch .custom-control-input ~ .custom-control-label::after {
+    background-color: var(--theme-selector-after-bg)!important;
+    transform: var(--theme-selector-after-transform)!important;
+}
+
+.custom-control-input ~ .custom-control-label::before {
+    color: var(--theme-selector-before-color)!important;
+    border-color: var(--theme-selector-before-border)!important;
+    background-color: var(--theme-selector-before-bg)!important;
+}
+
+#toggle-darkmode .custom-control.custom-switch {
+    transition: all 50ms ease!important;
 }
